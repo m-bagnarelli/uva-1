@@ -1,0 +1,100 @@
+body {
+	font-family: 'Lato', sans-serif !important;
+	background-image: url('images/background.png');
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 4rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-align: left;
+}
+
+.subtitle {
+	text-align: left;
+	font-style: italic;
+	font-size: 1.25rem;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.05em;
+	line-height: 2rem;
+	font-weight: 300;
+}
+
+.images-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-whatsapp {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 2;
+	cursor: pointer;
+	filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+
+.checked {
+  color: orange;
+}
+
+.mt-6 {
+	margin-top: 5rem;
+}
+
+/* breakpoint lg */
+@media (max-width: 992px) {
+	body {
+		height: 100%;
+	}
+
+	.images-section {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+}
+
+
+/* breakpoint md */
+@media (max-width: 768px) {
+	.navbar-brand img {
+		width: 200px;
+		height: 50px;
+	}
+
+	.title {
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-align: left;
+	}
+
+	.subtitle {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.images-section {
+		flex-direction: column;
+		justify-content: center;
+		gap: 3rem;
+	}
+
+	.card-container {
+		flex-direction: column !important;
+	}
+
+	.iframe-container {
+		width: 400px;
+	}
+
+	.contact-card {
+		display: flex;
+		flex-direction: column;
+	}
+}
